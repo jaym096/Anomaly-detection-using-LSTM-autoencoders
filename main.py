@@ -124,24 +124,24 @@ if __name__ == "__main__":
     test_normal_dataset, _, _ = utils.create_dataset(test_df)
     test_anomaly_dataset, _, _ = utils.create_dataset(anomaly_df)
 
-    # model = RecurrentAutoencoder(seq_len, n_features, 128)
-    # model = model.to(device)
-    #
-    # model, history = train_model(
-    #     model,
-    #     train_dataset,
-    #     val_dataset,
-    #     n_epochs=150
-    # )
-    #
-    # print("*** finished training ***")
-    #
-    # MODEL_PATH = 'model.pth'
-    # torch.save(model, MODEL_PATH)
-
-    # !gdown --id 1jEYx5wGsb7Ix8cZAw3l5p5pOwHs3_I9A
-    model = torch.load('model.pth')
+    model = RecurrentAutoencoder(seq_len, n_features, 128)
     model = model.to(device)
+    
+    model, history = train_model(
+        model,
+        train_dataset,
+        val_dataset,
+        n_epochs=150
+    )
+    
+    print("*** finished training ***")
+    
+    MODEL_PATH = 'model.pth'
+    torch.save(model, MODEL_PATH)
+
+#     !gdown --id 1jEYx5wGsb7Ix8cZAw3l5p5pOwHs3_I9A
+#     model = torch.load('model.pth')
+#     model = model.to(device)
 
     # clear the plot
     plt.clf()
