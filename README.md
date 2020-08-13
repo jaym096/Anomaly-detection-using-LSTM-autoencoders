@@ -4,6 +4,8 @@
 
 Implemented an LSTM Autoencoders for Time Series anomaly detection to classify a heartbeat into normal or anomaly.
 
+**Data:** The dataset contains 5,000 Time Series examples (obtained with ECG) with 140 timesteps. Each sequence corresponds to a single heartbeat from a single patient with congestive heart failure. [Source](http://timeseriesclassification.com/description.php?Dataset=ECG5000)
+
 ## Plots and Results
 
 1. Distribution of classes in the data
