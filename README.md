@@ -6,10 +6,11 @@ Implemented an LSTM Autoencoders for Time Series anomaly detection to classify a
 
 ## Plots and Results
 
-Distribution of class in the data
-![Image added](output_simple.jpg)
+Distribution of classes in the data
 
-![Image added](output_simple.jpg)
+![Image added](results/plot1.png)
+
+![Image added](results/plot2.png)
 
 ![Image added](output_simple.jpg)
 
