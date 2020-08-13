@@ -6,12 +6,22 @@ Implemented an LSTM Autoencoders for Time Series anomaly detection to classify a
 
 ## Plots and Results
 
-Distribution of classes in the data
+1. Distribution of classes in the data
 
 ![Image added](results/plot1.png)
 
+2. Averaged (smoothed out) time series for each class
+
 ![Image added](results/plot2.png)
 
-![Image added](output_simple.jpg)
+3. Density plot of reconstruction loss for training data
 
-![Image added](output_simple.jpg)
+![Image added](results/plot3.png)
+
+4. Density plot of reconstruction loss for test data of normal heartbeats 
+
+![Image added](results/plot4.png)
+
+5. Density plot for reconstruction loss for test data of anomaly heartbeats
+
+![Image added](results/plot5.png)
